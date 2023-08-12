@@ -1,12 +1,12 @@
 window.addEventListener('load', () => {
-  // Simulate a 5-second wait
+
   setTimeout(() => {
     const loadingContainer = document.getElementById('loadingContainer');
     const mainContent = document.getElementById('login-page');
 
     loadingContainer.style.display = 'none';
     mainContent.style.display = 'flex';
-  }, 500); // 5000 milliseconds = 5 seconds
+  }, 500);
 });
 
 
@@ -43,7 +43,6 @@ function sendMessage() {
 
 
 socket.on('chat-message', (data) => {
-  // console.log(data)
   addMessage(false, data)
 })
 
@@ -107,6 +106,8 @@ function clearfeedback() {
 const loginForm = document.getElementById('login-page');
 const userNameInput = document.getElementById('userNameInput');
 const logoutForm = document.getElementById('chat-page');
+
+
 function login() {
 
   if (userNameInput.value === '') return
