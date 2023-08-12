@@ -67,9 +67,6 @@ button {
 
 }
 
-button :hover {
-    transform: translateY(20px)
-}
 
 
 /* ------------------------------chat Page------------------------------- */
