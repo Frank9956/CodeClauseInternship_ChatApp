@@ -1,0 +1,258 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    height: 100vh;
+    background-size: contain;
+    background-position: -100px;
+    /* overflow: hidden; */
+
+}
+
+.login-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: #8DDBE0;
+    width: 40vh;
+
+}
+
+#login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+input.name {
+
+    width: 70%;
+    height: 3em;
+    background-color: #090909;
+    font-family: 'Poppins', sans-serif;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    padding: 0 2em;
+    color: #ffffff;
+}
+
+button {
+    width: 30%;
+    height: 2.5em;
+    border: 0px transparent;
+    color: #D3FFE9;
+    border-radius: 100px;
+    background-color: #4B5043;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+button :hover {
+    transform: translateY(20px)
+}
+.messageForm{
+    gap: 10px;
+    padding: 1em;
+}
+
+.chat-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: #8DDBE0;
+    width: 40vh;
+}
+
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    background-color: #090909;
+    border-radius: 20px 20px 0px 0;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    height: 3em;
+    }
+    
+    #userInput{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+    color: #D3FFE9;
+    font-variant-caps: all-petite-caps;
+    align-self: flex-end;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: start;
+    padding-left: 1em;
+    
+}
+    
+    
+.user> img {
+    background: white;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.messageForm>img {
+    background: white;
+    border-radius: 20px;
+    width: 10%;
+    border: 10px ;
+    padding: 8px 8px 8px 8px;
+    
+   
+
+}
+.chat-page>button :hover {
+    transform: translateY(20px)
+}
+
+#chat-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+p#messages {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 10px;
+    font-size: 20px;
+}
+
+span {
+    align-self: flex-end;
+    font-size: 10px;
+}
+
+
+.chat-container {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-grow: 1;
+    padding: 5px 0;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.chatSend,
+.chatRecive {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 15px;
+    max-width: 200px;
+    font-size: 10px;
+    word-wrap: break-word;
+}
+
+.chatSend {
+    background-color: #9BC4BC;
+    align-self: flex-end;
+    width: 45%;
+    border-radius: 15px 15px 0px 15px;
+    box-shadow: 1px 1px #27262c;
+}
+
+.chatRecive {
+    background-color: #D3FFE9;
+    align-self: flex-start;
+    width: 45%;
+    border-radius: 15px 15px 15px 0px;
+    box-shadow: 1px 1px #27262c;
+
+}
+
+#messageForm {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#login-page {
+    display: block;
+}

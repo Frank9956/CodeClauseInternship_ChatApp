@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Basic Chat App</title>
+</head>
+
+<body>
+
+  <div class="loading-container" id="loadingContainer">
+    <img src="logo.svg" alt="">
+    <div class="loader"></div>
+    <p>Loading...</p>
+  </div>
+  <div class="login-page" id="login-page" >
+    <h1 id="h1">Basic Chat App</h1>
+    <div id="login-section" >
+      <input type="text" id="nameInput" class="name" placeholder="Name" required>
+      <input type="text" id="userNameInput" class="name" placeholder="Username" required>
+      <button onclick="login()" > Sign In </button>
+    </div>
+  </div>
+  <div class="chat-page" id="chat-page" style="display: none;" >
+    <div class="user">
+      
+      <div id="userInput"></div>
+      <img src="logout.png" alt="" height="25" width="25" onclick="logout()">
+    </div>
+    <div class="chat-container" id="chat-container">
+    </div>
+    <form class="messageForm" id="messageForm">
+      <input type="text" id="messageInput" class="name" placeholder="Type your message">
+      <img src="send.png" alt="" height="20" width="20" onclick="sendMessage()">
+    </form>
+  </div>
+  <div id="user-number">
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    integrity="sha512-AAFiVKsnpyrAj9FsRCQoRicyuK/ewcA8GXo9mGRt/C9HDazasgTZxohCgWAjO5Vx8Ao/5mT+T2TRODuQbqfGlA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="main.js"></script>
+  <!-- <script src="server.js"></script> -->
+</body>
+
+</html>
