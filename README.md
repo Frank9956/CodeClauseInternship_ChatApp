@@ -15,7 +15,6 @@ This is a simple chat application with login/logout functionality, tracking acti
 - HTML, CSS, JavaScript
 - Socket.IO for real-time communication
 - Express.js for the backend server
-- (Add any other libraries or technologies used)
 
  ## Open your web browser and navigate to http://localhost:4000 to use the application
 
